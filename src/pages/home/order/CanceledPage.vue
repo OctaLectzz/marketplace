@@ -23,7 +23,7 @@
               <div class="float-right transaction-title">{{ formattedRupiah(transactiondetail.product.price) }}</div>
               <div class="row">
                 <div class="col-md-1 col-sm-2 col-xs-3 q-mx-xs">
-                  <q-img :src="url + '/public/products/' + transactiondetail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm transaction-image" />
+                  <q-img :src="url + '/products/' + transactiondetail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm transaction-image" />
                 </div>
                 <div class="col-5 q-mx-xs">
                   <div class="transaction-title" style="line-height: 1.2">

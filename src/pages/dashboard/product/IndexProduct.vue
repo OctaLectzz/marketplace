@@ -143,7 +143,7 @@
         <q-td :props="props">
           <div dense square>
             <span v-for="photo in props.row.photos" :key="photo.id" class="q-mx-md dashboard-image photo-container">
-              <img :src="url + '/public/products/' + photo.photo" width="150" />
+              <img :src="url + '/products/' + photo.photo" width="150" />
               <q-btn icon="cancel" size="sm" class="delete-icon" @click="deletePhoto(photo.id)" flat dense />
             </span>
           </div>
@@ -217,7 +217,7 @@
                   <!-- Photos -->
                   <div v-else-if="col.name === 'photos'" dense square>
                     <span v-for="photo in props.row.photos" :key="photo.id" class="q-mx-md dashboard-image photo-container">
-                      <img :src="url + '/public/products/' + photo.photo" width="150" />
+                      <img :src="url + '/products/' + photo.photo" width="150" />
                       <q-btn icon="cancel" size="sm" class="delete-icon" @click="deletePhoto(photo.id)" flat dense />
                     </span>
                   </div>

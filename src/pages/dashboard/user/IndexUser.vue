@@ -85,7 +85,7 @@
         <q-td :props="props">
           <div dense square>
             <q-avatar size="60px">
-              <img :src="url + '/public/avatars/' + props.row.avatar" />
+              <img :src="url + '/avatars/' + props.row.avatar" />
             </q-avatar>
           </div>
         </q-td>
@@ -148,7 +148,7 @@
                   <!-- Avatar -->
                   <div v-else-if="col.name === 'avatar'" dense square>
                     <q-avatar size="60px">
-                      <img :src="url + '/public/avatars/' + props.row.avatar" />
+                      <img :src="url + '/avatars/' + props.row.avatar" />
                     </q-avatar>
                   </div>
 

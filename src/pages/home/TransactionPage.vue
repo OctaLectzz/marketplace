@@ -98,7 +98,7 @@
           <div v-for="transactiondetail in transaction.transaction_details" :key="transactiondetail.id" class="row text-subtitle2 q-my-md">
             <div class="col-sm-7 col-xs-4">
               <div class="flex">
-                <q-img :src="url + '/public/products/' + transactiondetail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm" style="width: 30px" />
+                <q-img :src="url + '/products/' + transactiondetail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm" style="width: 30px" />
                 <span class="transaction-subtitle">
                   {{ transactiondetail.product.name }}
                 </span>

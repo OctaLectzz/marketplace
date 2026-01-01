@@ -84,7 +84,7 @@
       <template #body-cell-banner="props">
         <q-td :props="props">
           <div dense square>
-            <img :src="url + '/public/promotions/' + props.row.banner" class="products-image cursor-pointer" style="border-radius: 10px" />
+            <img :src="url + '/promotions/' + props.row.banner" class="products-image cursor-pointer" style="border-radius: 10px" />
           </div>
         </q-td>
       </template>
@@ -128,7 +128,7 @@
 
                   <!-- Banner -->
                   <div v-else-if="col.name === 'banner'" dense square>
-                    <img :src="url + '/public/promotions/' + props.row.banner" class="products-image cursor-pointer" style="border-radius: 10px" />
+                    <img :src="url + '/promotions/' + props.row.banner" class="products-image cursor-pointer" style="border-radius: 10px" />
                   </div>
 
                   <!-- URL -->

@@ -22,7 +22,7 @@
     >
       <q-carousel-slide v-for="promotion in promotions" :key="promotion.id" :name="promotion.id">
         <a :href="promotion.url" target="_blank" rel="noopener noreferrer">
-          <q-img :src="url + '/public/promotions/' + promotion.banner" class="carousel-img" style="width: 100%; height: auto" />
+          <q-img :src="url + '/promotions/' + promotion.banner" class="carousel-img" style="width: 100%; height: auto" />
         </a>
       </q-carousel-slide>
     </q-carousel>

@@ -18,7 +18,7 @@
       <div v-else class="row justify-center">
         <div class="col-12 text-center">
           <q-avatar size="80px" class="q-ma-md">
-            <img :src="url + '/public/avatars/' + profile.avatar" />
+            <img :src="url + '/avatars/' + profile.avatar" />
           </q-avatar>
         </div>
         <div class="col-12">

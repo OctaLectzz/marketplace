@@ -40,7 +40,7 @@
               <q-skeleton v-if="loading" type="QAvatar" size="26px" />
 
               <q-avatar v-else size="26px">
-                <img :src="url + '/public/avatars/' + profile.avatar" />
+                <img :src="url + '/avatars/' + profile.avatar" />
               </q-avatar>
             </template>
             <div class="row no-wrap q-pa-md">
@@ -76,7 +76,7 @@
 
               <div class="column items-center">
                 <q-avatar size="72px" class="q-mx-md">
-                  <img :src="url + '/public/avatars/' + profile.avatar" />
+                  <img :src="url + '/avatars/' + profile.avatar" />
                 </q-avatar>
 
                 <div class="nav-profile text-subtitle1 text-grey-8 q-mt-sm">{{ profile.username }}</div>
@@ -137,7 +137,7 @@
                 <q-skeleton v-if="loading" type="QAvatar" size="26px" />
 
                 <q-avatar v-else size="26px">
-                  <img :src="url + '/public/avatars/' + profile.avatar" />
+                  <img :src="url + '/avatars/' + profile.avatar" />
                 </q-avatar>
               </template>
               <div class="row no-wrap q-pa-md">
@@ -173,7 +173,7 @@
 
                 <div class="column items-center">
                   <q-avatar size="72px" class="q-mx-md">
-                    <img :src="url + '/public/avatars/' + profile.avatar" />
+                    <img :src="url + '/avatars/' + profile.avatar" />
                   </q-avatar>
 
                   <div class="nav-profile text-subtitle1 text-grey-8 q-mt-sm">{{ profile.username }}</div>
@@ -204,13 +204,13 @@
 
           <!-- Profile -->
           <q-route-tab v-if="!token" name="profile" :to="{ name: 'login' }">
-            <q-avatar size="20px"><img :src="url + '/public/avatars/user-profile-default.jpg'" /></q-avatar>
+            <q-avatar size="20px"><img :src="url + '/avatars/user-profile-default.jpg'" /></q-avatar>
           </q-route-tab>
           <q-route-tab v-else name="profile" :to="{ name: 'home.profile' }">
             <q-skeleton v-if="loading" type="QAvatar" size="20px" />
 
             <q-avatar v-else size="20px">
-              <img :src="url + '/public/avatars/' + profile.avatar" />
+              <img :src="url + '/avatars/' + profile.avatar" />
             </q-avatar>
           </q-route-tab>
         </q-tabs>

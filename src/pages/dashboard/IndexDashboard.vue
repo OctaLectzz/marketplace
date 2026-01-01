@@ -134,7 +134,7 @@
             <q-td :props="props">
               <div dense square>
                 <div v-for="transaction_detail in props.row.transaction_details" :key="transaction_detail.id" class="q-my-sm">
-                  <q-img :src="url + '/public/products/' + transaction_detail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm" style="width: 30px" />
+                  <q-img :src="url + '/products/' + transaction_detail.product.photos[0].photo" :ratio="1 / 1" class="q-mx-sm" style="width: 30px" />
                   {{ transaction_detail.product.name }}
                   <span class="q-mx-sm text-bold text-grey-6">x {{ transaction_detail.quantity }}</span>
                 </div>
@@ -148,7 +148,7 @@
               <q-item>
                 <q-item-section avatar>
                   <q-avatar>
-                    <img :src="url + '/public/avatars/' + props.row.user.avatar" />
+                    <img :src="url + '/avatars/' + props.row.user.avatar" />
                   </q-avatar>
                 </q-item-section>
 

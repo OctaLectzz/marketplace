@@ -15,7 +15,7 @@
       <div v-for="product in products" :key="product.id" class="col-sm-4 col-md-3 q-ma-xs">
         <router-link :to="{ name: 'home.showproduct', params: { slug: product.slug } }" class="products-link">
           <div class="component-products">
-            <q-img :src="url + '/public/products/' + product.photos[0].photo" :ratio="16 / 9" class="products-image" />
+            <q-img :src="url + '/products/' + product.photos[0].photo" :ratio="16 / 9" class="products-image" />
           </div>
           <div class="products-title text-dark text-h6 q-mt-sm q-ml-sm">{{ product.name }}</div>
           <div class="products-price text-body2 q-ml-sm" style="color: #ff7158">{{ formattedRupiah(product.price) }}</div>

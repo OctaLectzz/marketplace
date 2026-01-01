@@ -41,7 +41,7 @@
             <q-card-section class="text-center q-pa-md">
               <!-- Avatar -->
               <q-avatar size="100px" class="q-my-md">
-                <img ref="avatar" :src="url + '/public/avatars/' + data.avatar" />
+                <img ref="avatar" :src="url + '/avatars/' + data.avatar" />
               </q-avatar>
               <div class="text-subtitle2 text-grey-7">JPG atau PNG tidak lebih besar dari 5 MB</div>
               <q-btn color="primary" class="q-my-md" label="Unggah Foto baru" @click="$refs.avatarInput.click()" no-caps />

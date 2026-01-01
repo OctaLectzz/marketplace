@@ -109,12 +109,12 @@ module.exports = configure(function (/* ctx */) {
     sourceFiles: {
       rootComponent: 'src/App.vue',
       router: 'src/router/index',
-      store: 'src/stores/index'
-      // registerServiceWorker: 'src-pwa/register-service-worker',
-      // serviceWorker: 'src-pwa/custom-service-worker',
-      // pwaManifestFile: 'src-pwa/manifest.json',
-      // electronMain: 'src-electron/electron-main',
-      // electronPreload: 'src-electron/electron-preload'
+      store: 'src/stores/index',
+      registerServiceWorker: 'src-pwa/register-service-worker',
+      serviceWorker: 'src-pwa/custom-service-worker',
+      pwaManifestFile: 'src-pwa/manifest.json',
+      electronMain: 'src-electron/electron-main',
+      electronPreload: 'src-electron/electron-preload'
     },
 
     // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr

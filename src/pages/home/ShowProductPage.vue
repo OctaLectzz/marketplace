@@ -28,7 +28,7 @@
       <div class="col-md-8 col-xs-12 q-mx-sm">
         <!-- Photos -->
         <q-carousel v-model="slide" v-model:fullscreen="fullscreen" class="carousel-products" infinite navigation swipeable animated arrows>
-          <q-carousel-slide v-for="photo in product.photos" :key="photo.id" :name="photo.id" :img-src="url + '/public/products/' + photo.photo" img-class="carousel-photo" />
+          <q-carousel-slide v-for="photo in product.photos" :key="photo.id" :name="photo.id" :img-src="url + '/products/' + photo.photo" img-class="carousel-photo" />
           <template v-slot:control>
             <q-carousel-control position="bottom-right" :offset="[18, 18]">
               <q-btn color="primary" text-color="white" :icon="fullscreen ? 'fullscreen_exit' : 'fullscreen'" class="large-screen" @click="fullscreen = !fullscreen" round dense />

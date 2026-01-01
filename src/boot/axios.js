@@ -1,7 +1,7 @@
 import { boot } from 'quasar/wrappers'
 import axios from 'axios'
 
-const url = 'https://marketplace.winecoders.com/api'
+const url = 'http://localhost:8000'
 const server = axios.create({ baseURL: url })
 
 const token = localStorage.getItem('token')
